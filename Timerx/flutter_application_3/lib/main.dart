@@ -6,12 +6,12 @@ void main() {
 }
 
 // ── Tema Renkleri ────────────────────────────────────────────────────────────
-const Color bgColor = Color(0xFFB08090);
-const Color cardColor = Color(0xFFC09898);
-const Color goldAccent = Color(0xFFD4A820);
-const Color darkRing = Color(0xFF2A1A1A);
-const Color pillColor = Color(0xFFF0E070);
-const Color pillText = Color(0xFF3A2A00);
+const Color bgColor = Color(0xFF0F172A);
+const Color cardColor = Color(0xFF1E293B);
+const Color goldAccent = Color(0xff10B981);
+const Color darkRing = Color(0xFFF43F5E);
+const Color pillColor = Color(0xff38BDF8);
+const Color pillText = Color(0xFFF8FAFC);
 
 class StudyTrackerApp extends StatelessWidget {
   const StudyTrackerApp({super.key});
@@ -61,10 +61,7 @@ class TaskSelectionScreen extends StatefulWidget {
 class _TaskSelectionScreenState extends State<TaskSelectionScreen> {
   final TextEditingController _taskController = TextEditingController();
 
-  final List<StudyTask> _tasks = [
-    StudyTask(id: '1', title: 'Assembly - Temel Komutlar', durationMinutes: 25),
-    StudyTask(id: '2', title: 'Bellek Adresleme Modları', durationMinutes: 20),
-  ];
+  final List<StudyTask> _tasks = [];
 
   void _addTask() {
     if (_taskController.text.trim().isEmpty) return;

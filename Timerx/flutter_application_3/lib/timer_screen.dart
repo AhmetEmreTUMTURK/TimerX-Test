@@ -239,7 +239,7 @@ class _CircularTimer extends StatelessWidget {
 
 class _CircularPainter extends CustomPainter {
   final double progress;
-  static const Color _gold = Color(0xFFD4A820);
+  static const Color _gold = Color(0xffC3CC9B);
   static const Color _dark = Color(0xFF2A1A1A);
 
   const _CircularPainter({required this.progress});
@@ -260,7 +260,7 @@ class _CircularPainter extends CustomPainter {
           ..strokeWidth = 2.5);
 
     final tickPaint = Paint()
-      ..color = _dark.withOpacity(0.55)
+      ..color = const Color.fromARGB(255, 0, 0, 0).withOpacity(0.55)
       ..strokeWidth = 1.5;
     for (int i = 0; i < 48; i++) {
       final angle = (i / 48) * 2 * pi - pi / 2;
@@ -327,7 +327,7 @@ class _CircularPainter extends CustomPainter {
         center,
         radius - strokeW / 2 - 3,
         Paint()
-          ..color = const Color(0xFF8B6070)
+          ..color = const Color(0xffC3CC9B)
           ..style = PaintingStyle.fill);
 
     canvas.drawCircle(
